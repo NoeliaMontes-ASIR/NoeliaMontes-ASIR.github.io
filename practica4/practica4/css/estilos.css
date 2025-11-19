@@ -1,20 +1,27 @@
 body {
     background-image: url("../images/fondo.jpg");
+    text-align: center;
 }
 
 h1 {
-
+    background-color: rgb(189, 189, 189);
+    color: white;
+    border-left: 10px solid red;
+    text-align: center;
 }
 
 img {
-
+    border-radius: 10px;
+    border: solid ;
+    box-shadow: 5px 4px 10px black;
 }
 
 ul {
-
+    list-style: none;
 }
 
 li {
-
+    border: 1px solid black;
+    display: inline;
 }
 
