@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparación entre Frameworks de CSS</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      tr {
+        margin-bottom: 20px;
+      }
+
+      td {
+        position: relative;
+        padding-left: 50%;
+        border: none;
+        border-bottom: 1px solid #eee;
+      }
+
+      td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-label);
+        font-weight: bold;
+      }
+
+      td:nth-of-type(1):before { content: "Framework"; }
+      td:nth-of-type(2):before { content: "Ventajas"; }
+      td:nth-of-type(3):before { content: "Inconvenientes"; }
+      td:nth-of-type(4):before { content: "Dirección"; }
+      td:nth-of-type(5):before { content: "Precios"; }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h2>Comparación entre Frameworks de CSS</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Framework</th>
+          <th>Ventajas</th>
+          <th>Inconvenientes</th>
+          <th>Dirección para obtenerlos</th>
+          <th>Precios o condiciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Framework"><img src="images/bootstrap.png" alt="Bootstrap"></td>
+          <td data-label="Ventajas">
+            <ul>
+              <li>Amplia documentación y comunidad</li>
+              <li>Facilita el diseño responsivo</li>
+              <li>Gran cantidad de componentes prediseñados</li>
+            </ul>
+          </td>
+          <td data-label="Inconvenientes">
+            <ul>
+              <li>Puedes terminar con un diseño similar a otros sitios</li>
+              <li>Puede ser pesado si no se optimiza</li>
+            </ul>
+          </td>
+          <td data-label="Dirección"><a href="https://getbootstrap.com">getbootstrap.com</a></td>
+          <td data-label="Precios">Gratis</td>
+        </tr>
+        <tr>
+          <td data-label="Framework"><img src="images/foundation.png" alt="Foundation"></td>
+          <td data-label="Ventajas">
+            <ul>
+              <li>Flexibilidad y personalización</li>
+              <li>Soporte avanzado de accesibilidad</li>
+              <li>Sistema de rejillas avanzado</li>
+            </ul>
+          </td>
+          <td data-label="Inconvenientes">
+            <ul>
+              <li>Curva de aprendizaje más pronunciada</li>
+              <li>Menos popular que Bootstrap</li>
+            </ul>
+          </td>
+          <td data-label="Dirección"><a href="https://get.foundation">get.foundation</a></td>
+          <td data-label="Precios">Gratis</td>
+        </tr>
+        <tr>
+          <td data-label="Framework"><img src="images/bulma.png" alt="Bulma"></td>
+          <td data-label="Ventajas">
+            <ul>
+              <li>Sintaxis clara y sencilla</li>
+              <li>Diseño moderno por defecto</li>
+              <li>Basado en Flexbox</li>
+            </ul>
+          </td>
+          <td data-label="Inconvenientes">
+            <ul>
+              <li>Menos componentes que otros frameworks</li>
+              <li>Personalización limitada sin SASS/SCSS</li>
+            </ul>
+          </td>
+          <td data-label="Dirección"><a href="https://bulma.io">bulma.io</a></td>
+          <td data-label="Precios">Gratis</td>
+        </tr>
+        <tr>
+          <td data-label="Framework"><img src="images/tailwind.png" alt="Tailwind CSS"></td>
+          <td data-label="Ventajas">
+            <ul>
+              <li>Altamente personalizable</li>
+              <li>Mejora el rendimiento del diseño</li>
+              <li>Facilita la creación de diseños únicos</li>
+            </ul>
+          </td>
+          <td data-label="Inconvenientes">
+            <ul>
+              <li>Curva de aprendizaje inicial</li>
+              <li>Puedes terminar con clases muy largas</li>
+            </ul>
+          </td>
+          <td data-label="Dirección"><a href="https://tailwindcss.com">tailwindcss.com</a></td>
+          <td data-label="Precios">Gratis</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

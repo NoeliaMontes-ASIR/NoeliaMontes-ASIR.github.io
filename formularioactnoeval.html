@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario actividad noeval</title>
+</head>
+<body>
+
+    <form action="http://ncoge.com/phps/formulario.php" method="post">
+
+    <table border="2">
+        <tr>
+            <td>
+                Nombre: <input type="text" name="”nameUser”">
+                Apellidos: <input type="text" name="Apellidos">
+                Correo: <input type="email" name="correo">
+                Hobbies: <textarea cols="30" rows="5" name="hobbies"></textarea>
+            </td>
+            <td>
+            <p>Puntua tu nivel de idioma del 1 a 5:</p>
+                <b>Inglés:</b> <input type="radio" name="Inglés" value="1">1
+                               <input type="radio" name="Inglés" value="2">2
+                               <input type="radio" name="Inglés" value="3">3
+                               <input type="radio" name="Inglés" value="4">4
+                               <input type="radio" name="Inglés" value="5">5
+                <b>Francés:</b> <input type="radio" name="Francés" value="1">1
+                                <input type="radio" name="Francés" value="2">2
+                                <input type="radio" name="Francés" value="3">3
+                                <input type="radio" name="Francés" value="4">4
+                                <input type="radio" name="Francés" value="5">5
+                <b>Alemán:</b> <input type="radio" name="Alemán" value="1">1
+                               <input type="radio" name="Alemán" value="2">2
+                               <input type="radio" name="Alemán" value="3">3
+                               <input type="radio" name="Alemán" value="4">4
+                               <input type="radio" name="Alemán" value="5">5
+
+            <p>Domino los siguientes programas:</p>
+                <input type="checkbox" name="writer" value="writer">Writer
+                <input type="checkbox" name="base" value="base">Base
+                <input type="checkbox" name="calc" value="calc">Calc
+                <input type="checkbox" name="impress" value="impress">Impress
+
+            <p>Trabajo con el siguiente Sistema operativo:</p>
+                <select name="linux">
+                    <option value="windows">Windows</option>
+                    <option value="mac">Mac OS</option>
+                    <option value="ubuntu">Ubuntu</option>
+                    <option value="linux">Linux</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <input type="submit" name="enviar">
+                <input type="reset" name="reiniciar" value="borrar datos">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
