@@ -1,0 +1,95 @@
+*{
+
+}
+
+body {
+  background-color: rgb(216, 226, 235);
+}
+
+h1 {
+    border-bottom: 5px black solid;
+    text-align: center;
+    background-color: rgb(210, 203, 241);
+}
+
+img {
+    border: black 2px solid;
+    margin-right: 60px;
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+p {
+  
+}
+
+#header {
+  
+}
+
+#content{
+  
+}
+
+#text {
+    
+}
+
+#text p {
+  border-style: dashed;
+}
+
+#text p:first-child {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    
+
+}
+
+#text p:last-child {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#menu {
+
+}
+
+#menu a{
+
+}
+
+
+#menu li{
+
+}
+
+#menu li a:hover{
+
+}
+
+#footer{
+
+}
+
+#footer a{
+
+}
+
+#footer a:hover{
+
+}
+#image { 
+        text-align: right;
+
+}
+
+@media all and (max-width: 500px) {
+
+}

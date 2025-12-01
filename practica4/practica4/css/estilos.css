@@ -1,6 +1,8 @@
 body {
     background-image: url("../images/fondo.jpg");
     text-align: center;
+    overflow: hidden;
+    background-size: cover;
 }
 
 h1 {
@@ -14,6 +16,8 @@ img {
     border-radius: 10px;
     border: solid ;
     box-shadow: 5px 4px 10px black;
+    width: 700px;
+    height: 700px;
 }
 
 ul {
