@@ -1,7 +1,7 @@
 body {
     background-image: url("../images/fondo.jpg");
     text-align: center;
-    overflow: hidden;
+    overflow: hidden;  -- te oculta el texto que sale del cuadrado
     background-size: cover;
 }
 
@@ -13,19 +13,19 @@ h1 {
 }
 
 img {
-    border-radius: 10px;
+    border-radius: 10px;  -- redondea la esquina
     border: solid ;
-    box-shadow: 5px 4px 10px black;
+    box-shadow: 5px 4px 10px black; sombra al parafo
     width: 700px;
     height: 700px;
 }
 
 ul {
-    list-style: none;
+    list-style: none;  -- le quitas el punto de la lista
 }
 
 li {
-    border: 1px solid black;
-    display: inline;
+    border: 1px solid black; -- bordes en cada uno de las listas
+    display: inline;  - para poner la lista en linea
 }
 
