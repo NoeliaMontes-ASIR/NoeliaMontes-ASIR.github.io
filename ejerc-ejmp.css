@@ -1,11 +1,11 @@
 p{
-    border: 2px red dashed;
-    padding: 50px 20px;
-    /*background-image:url()*/
-    background-color: aqua;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    border: 2px red dashed;   /*linea punteada*/
+    padding: 50px 20px;  -- espacio entre cosas como parrafo
+    /*background-image:url()*/ 
+    background-color: aqua;  -- fondo 
+    background-repeat: no-repeat;  - fondo que no se repita
+    background-size: cover;  - ocupar todo dentro de un cuadrado
+    background-attachment: fixed; - fija en un sitio
 }
 a{
     border: 5px orange solid;
