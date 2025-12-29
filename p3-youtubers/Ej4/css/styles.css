@@ -12,8 +12,11 @@
 
 body {
     /* 1- color de fondo */
+    background-color: #333333;
     /* 2- ancho 90% */
+    width: 90%;
     /* 3- centrar */
+    
 }
 
 .container {
@@ -22,9 +25,12 @@ body {
 
 .youtuber, .footer, .header {
     /* 4- color de fondo */
+    background-color: #424242;
     border: 1px solid lightgray;
     /* 5- redondear el borde */
+    border-radius: 10px;
     /* 6- sombra */
+    box-shadow: 10px 10px 10px;
     margin: 10px auto;
     padding: 20px;
     text-align: center;    
@@ -38,6 +44,8 @@ body {
     border:black 4px solid;
     border-radius: 3%;
     /* 7- tamanyo */
+    width: 350px;
+    height: 350px;
     /* Se utiliza en imágenes y videos 
     para asegurarse de que siempre llenen 
     completamente el contenedor, manteniendo
