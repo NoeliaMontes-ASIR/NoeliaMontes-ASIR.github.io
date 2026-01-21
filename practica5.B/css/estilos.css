@@ -8,6 +8,7 @@ body {
   background-position: center center;
   background-size: cover;
   font-family: 'Indie Flower', cursive;
+  background-image: url(/practica5.B/images/shinchan-fondo.jpg);
 }
 
 h1, h2 {
@@ -30,9 +31,9 @@ p {
 #header {
   margin-top: 35px;
   text-align: center;
-  background-color: #FF9900;
-  border-bottom: 5px solid #6599FF;
-  border-top: 5px solid #6599FF;
+  background-color: red;
+  border-bottom: 5px solid yellow;
+  border-top: 5px solid palegoldenrod;
   color: white;
   padding-top: 10px;
 }
@@ -100,6 +101,11 @@ width: 100%;
   clear: both;
 }
 
+#logoredes {
+  float: right;
+  width: 10%;
+}
+
 #footer a{
   color: black;
   text-decoration: none;
@@ -107,7 +113,7 @@ width: 100%;
 
 #footer a:hover{
   color: #443266;
-  background-color: white;
+  background-color: red;
   text-decoration: none;
 }
 #image {
@@ -124,41 +130,38 @@ width: 100%;
   /* necesitas 1 instruccion*/
   /*1: */
   float: left;
-  text-align: center;
+  text-align: left;
   padding-bottom: 5px;
+  margin-top: 0%;
+  width: 15%;
+}
+
+#imageLeft2 {
+ /*
+  Punto 2: La capa de las imagenes debe aparecer a la izquierda de la pantalla
+ */
+
+  /* necesitas 1 instruccion*/
+  /*1: */
+  float: left;
+  text-align: left;
+  padding-bottom: 5px;
+  margin-top: 0%;
+  width: 9%;
 }
 
 #imageRight {
  /*
   Punto 2: La capa de las imagenes debe aparecer a la derecha de la pantalla
  */
-
+  
   /* necesitas 1 instruccion*/
   /*1: */
   float: right;
-  text-align: center;
+  text-align: right;
   padding-bottom: 5px;
-}
-
-#textMain {
-/*
-  Punto 3: Para que la capa de la imagen y el float NO sigan la dinamica de la seccion anterior hay que romperla
- */
-  /* necesitas 1 instruccion*/
-  /*1: */
-clear: both;
-}
-
-#imageToHide {
- /*
-  Punto 3: La capa de las imagenes debe aparecer a la izquierda de la pantalla
- */
-
-  /* necesitas 1 instruccion*/
-  /*1: */  
-  float: left;
-  text-align: center;
-  margin-bottom: 40px;
+  margin-top: 0%;
+  width: 15%;
 }
 
 #textCookie {
@@ -195,8 +198,7 @@ margin-top: 10%;
   /* necesitas 2 instruccion*/
   /*1: */
 overflow: scroll;
-  /*2: */  
-  
+  /*2: */   
 
   height: 250px;
   text-align: justify;
@@ -204,15 +206,49 @@ overflow: scroll;
   background-color: white;
   padding: 20px;
   margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-#textCentral {
-  margin-top: 10px;
-  padding: 15px;
-  border: 5px dashed black;
+#textOverflow2 {
+ /*
+  Punto 5: La capa tiene una barra de scroll vertical para que podamos leer el texto que no cabe en el tamaño. Solo vertical, no horizontal
+ */
+
+  /* necesitas 2 instruccion*/
+  /*1: */
+overflow: scroll;
+  /*2: */   
+
+  height: 250px;
+  text-align: justify;
+  border: 5px solid black;
   background-color: white;
-  margin: 10px 250px ;
-  border-radius: 30px 30px 30px 30px ;     /* resto */
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+#textOverflow3 {
+ /*
+  Punto 5: La capa tiene una barra de scroll vertical para que podamos leer el texto que no cabe en el tamaño. Solo vertical, no horizontal
+ */
+
+  /* necesitas 2 instruccion*/
+  /*1: */
+overflow: visible;
+  /*2: */   
+
+  height: 250px;
+  text-align: justify;
+  border: 5px solid black;
+  background-color: white;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 .button {
