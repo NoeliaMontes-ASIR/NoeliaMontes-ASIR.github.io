@@ -41,7 +41,7 @@ p {
 }
 
 #content{
-  
+
 }
 
 #menu {
@@ -135,7 +135,7 @@ width: 100%;
   text-align: left;
   padding-bottom: 5px;
   margin-top: 0%;
-  width: 15%;
+  width: 35%;
 }
 
 #imageLeft2 {
@@ -149,7 +149,7 @@ width: 100%;
   text-align: left;
   padding-bottom: 5px;
   margin-top: 0%;
-  width: 9%;
+  width: 30%;
 }
 
 #imageRight {
@@ -163,7 +163,7 @@ width: 100%;
   text-align: right;
   padding-bottom: 5px;
   margin-top: 0%;
-  width: 15%;
+  width: 35%;
 }
 
 #textCookie {
@@ -240,7 +240,7 @@ overflow: scroll;
 
   /* necesitas 2 instruccion*/
   /*1: */
-overflow: visible;
+overflow: scroll;
   /*2: */   
 
   height: 250px;
