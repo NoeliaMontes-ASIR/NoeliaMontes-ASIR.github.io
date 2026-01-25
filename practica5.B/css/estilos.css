@@ -1,5 +1,6 @@
 *{
-  margin: 0px auto;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -334,4 +335,29 @@ float: none;
 #dos {
   display: flex;
  width: 20%;
+}
+
+/*
+    No me funciona para cuando la pantalla se haga pequeña (modo movil) se pongan abajo,
+    he estado mirando y cambiando cosas y nada,no tengo ni idea, se lo he preguntado a chatgpt y me ha dado eso,
+     aunque tampoco va, porque se queda arriba del todo, no se que más hacer. Lo dejo así y lo ves tu a ver. Gracias.
+    */
+
+@media all and (max-width: 300px) {
+
+  #uno, #dos {
+    width: 100%;
+    bottom: 0%;
+  }
+
+  #logoredes ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  #logoredes li {
+    list-style: none;
+    margin: 10px;
+  }
+
 }
