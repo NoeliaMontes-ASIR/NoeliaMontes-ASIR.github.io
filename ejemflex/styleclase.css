@@ -1,0 +1,20 @@
+.padre{
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap; /* te lo pone en bloque cuadno no cabe automaticamente */
+}
+.hijo {
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+}

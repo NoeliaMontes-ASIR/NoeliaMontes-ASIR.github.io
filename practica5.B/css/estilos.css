@@ -344,15 +344,22 @@ float: none;
     */
 
 @media all and (max-width: 300px) {
-  #uno, #dos {
-    width: 100%;
+  #uno{
+    width: 80%;
+  }
+  
+  #dos {
+    width: 20%;
+    text-align: center;
+    float: none;
   }
   #logoredes ul {
-    display: flex;
+    
     justify-content: center;
+
   }
   #logoredes li {
     list-style: none;
     margin: 10px;
-  }
-}
+    display: inline;
+  }}
