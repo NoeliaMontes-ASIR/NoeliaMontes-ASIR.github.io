@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<-- para hacer una tabla, le vas copiando y pegando las columnas -->
+<menu>
+    <desayuno>
+        <nombre> gofre </nombre>
+
+        <precio> 1.1 </precio>
+
+        <descripcion> famosos </descripcion>
+
+        <calorias>  650 </calorias>
+    </desayuno>
+
+    <desayuno>
+        <nombre> gofre </nombre>
+
+        <precio> 1.1 </precio>
+
+        <descripcion> famosos </descripcion>
+
+        <calorias>  650 </calorias>
+    </desayuno>
+
+
+    <desayuno>
+        <nombre> gofre </nombre>
+
+        <precio> 1.1 </precio>
+
+        <descripcion> famosos </descripcion>
+
+        <calorias>  650 </calorias>
+    </desayuno>
+
+
+    <desayuno>
+        <nombre> gofre </nombre>
+
+        <precio> 1.1 </precio>
+
+        <descripcion> famosos </descripcion>
+
+        <calorias>  650 </calorias>
+    </desayuno>
+</menu>

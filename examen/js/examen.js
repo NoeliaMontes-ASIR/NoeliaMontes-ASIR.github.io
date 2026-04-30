@@ -1,14 +1,20 @@
-let suma = 0;
+let num=document.getElementById("numero")
+let boton=document.getElementById("boton")
+let resultado=document.getElementById("resultado")
+let total=0
+let numeros=[]
 
-function sumar(a, b) {
-return a + b;
+
+function suma(a, b) {
+    return parseInt(a) + parseInt(b)
 }
-for (let suma = 1; suma < suma.length; i++) {
-suma += i;
-}
-console.log("La suma de los números es:", suma [i]);
 
+const suma2=(a,b) => { a+b }
 
-console.log(sumar(3, 5));
-console.log(sumar(10, 20));
-console.log(sumar(7, 8));
+boton.addEventListener("click", (e) => {
+    console.log("me han hecho click")
+    total=suma(total,num.value)
+    resultado.innerHTML=total
+    numeros.push(num.value)
+    resultado.innerHTML=numeros + ". total: " + total
+})

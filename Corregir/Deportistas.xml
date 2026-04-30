@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+-- dos opciones de solucion, una es ponerlo como cadena vacia, pero le quitas espacios
+otra es haciendolo atributo
+otra es abriendo y cerrando las dos etiquetas
+
+<deportistas>
+
+  <deportista>
+    <deporte_Atletismo />
+    <nombre>Jesse Owens</nombre>
+  </deportista>
+  
+  <deportista>
+    <deporte nombre="Natación" />
+    <nombre>Mark Spitz</nombre>
+  </deportista>
+
+  <deportista>
+    <deporte> kung fu </deporte>
+    <nombre>lila Owens</nombre>
+  </deportista>
+
+</deportistas>

@@ -45,23 +45,23 @@
 
 // ejmplo de hacer los numeros del 1-10 pero yendo de 1 en 1, si son hasta el mil, te mueres haciendolo
 
-// let num=0
+let num=0
 
-// console.log(num)
-//   num+=1
-//   console.log(num)
-//   num+=1
-//   console.log(num)
-//   num+=1
-//   console.log(num)
-//   num+=1
-//   console.log(num)
-//   num+=1
-//   console.log(num)
-//   num+=1
-//   console.log(num)
-//   num+=1
-// // ----------
+console.log(num)
+  num+=1
+  console.log(num)
+  num+=1
+  console.log(num)
+  num+=1
+  console.log(num)
+  num+=1
+  console.log(num)
+  num+=1
+  console.log(num)
+  num+=1
+  console.log(num)
+  num+=1
+// ----------
 
 // // escribir los num del 1 al 10
 
@@ -95,46 +95,46 @@ function damenumero(max) {
 
 // para hacer el num de la loteria, quieres 6 aleatorios y sin repetir, y que llegue solo hasta el 49.
 
-let veces=1
-let numero=[]  //una lista
-while(veces<=6) {
-    veces++
-    let variable=damenumero(49)
-    if (numero.indexOf(variable)>-1){
+// let veces=1
+// let numero=[]  //una lista
+// while(veces<=6) {
+//     veces++
+//     let variable=damenumero(49)
+//     if (numero.indexOf(variable)>-1){
 
-    }
-    numero.push(variable)
-}
-    console.log(numero)
-
-
-let abece="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-let frase="casa"
-let paso=3
+//     }
+//     numero.push(variable)
+// }
+//     console.log(numero)
 
 
-// for (i=0;i<frase.length;i++) {
-//     console.log("Voy a buscar la letras: " + frase[i])
-//     let posicion=abece.indexOf  (frase[i])
-//     console.log("esta en la posicion: " + posicion)
-//     // para q sume paso a la posiccion de letra
-//     let nuevaposicion=posicion+paso
-//     let nuevaletra=abece[nuevaposicion]
-//     console.log("su nuevaletra es: " + nuevaletra)
+// let abece="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+// let frase="casa"
+// let paso=3
+
+
+// // for (i=0;i<frase.length;i++) {
+// //     console.log("Voy a buscar la letras: " + frase[i])
+// //     let posicion=abece.indexOf  (frase[i])
+// //     console.log("esta en la posicion: " + posicion)
+// //     // para q sume paso a la posiccion de letra
+// //     let nuevaposicion=posicion+paso
+// //     let nuevaletra=abece[nuevaposicion]
+// //     console.log("su nuevaletra es: " + nuevaletra)
+// // }
+
+// let totalcarac=""
+// let caracteres="abcdefghijklmnopqrstuvwxyz" 
+// let caracteresmayus="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+// let caracteresnum="0123456789"
+// let caracteresesp="!@#$%&*()_+|~`={}[]:;'<>?,./"
+
+// function numeroaleatorio(min,max) {
+//     let numero=Math.floor(Math)
+//     return numero
 // }
 
-let totalcarac=""
-let caracteres="abcdefghijklmnopqrstuvwxyz" 
-let caracteresmayus="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-let caracteresnum="0123456789"
-let caracteresesp="!@#$%&*()_+|~`={}[]:;'<>?,./"
 
-function numeroaleatorio(min,max) {
-    let numero=Math.floor(Math)
-    return numero
-}
-
-
-for (i=0; i<totalcarac.length; i++)
+// for (i=0; i<totalcarac.length; i++)
 
     

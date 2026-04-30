@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="contenedor">
+    <h1><b>Ejercicio</b></h1>
+    <h2> <b>Triangulator</b></h2>
+
+    <div class="formulario">
+      Líneas: <input type="number" id="cantidad">
+      <input type="button" id="Doit" value="Doit">
+    </div>
+
+    <div id="resultados" class="resultados"></div>
+    <p id="error" class="error"></p>
+  </div>
+<script>
+        let linea= "numero"
+
+
+        let lineas=document.getElementById("cantidad")
+        let convertirBtn=document.getElementById("Doit")
+        let resultado=document.getElementById("resultado")
+
+        linea.addEventListener("click",(e) => {
+    let numero= (numero.value)
+    let lineas= (numero2.value)
+    let cadenatotal = " "
+    for(let i=0;i<lineas;i++){
+        cadenatotal=cadenatotal+numero+"<br>"
+        console.log(cadenatotal)
+    }
+    solucion.innerHTML=cadenatotal
+})
+
+
+        function triangulo(triangulos) {  
+
+            let liElement = document.createElement("li");
+            liElement.innerHTML = `${cantidad.value} ${numero} => ${triangulos}` 
+            return liElement
+        }
+
+        async function convertir(){        
+                       let nuevoItem = creaElemento(valor,clave)
+                        resultado.appendChild(nuevoItem)    
+                    };
+
+        convertirBtn.addEventListener("click", function(){
+            resultado.innerHTML=""
+            Doit()
+        })
+
+    </script>
+
+</body>
+</html>

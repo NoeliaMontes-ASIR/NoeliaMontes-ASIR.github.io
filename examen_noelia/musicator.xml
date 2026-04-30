@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<musicator>
+    <Discos>
+        <titulo>Joshua tree </titulo>
+        <grupo>U2</grupo>
+        <formato>CD</formato>
+        <id>D1</id>
+        <fecha_comprado>01/01/2026</fecha_comprado>
+    </Discos>
+            
+    <Discos>
+        <titulo>La venganza de Goku </titulo>
+        <grupo>Akira Toriyama</grupo>
+        <formato>LP</formato>
+        <id>D2</id>
+        <fecha_comprado>01/03/2026</fecha_comprado>
+    </Discos>
+
+    <Discos>
+        <titulo>BSO mortadelo y filemón</titulo>
+        <grupo> Ibañez</grupo>
+        <formato>Cassette</formato>
+        <id>D3</id>
+        <fecha_comprado>01/04/2026</fecha_comprado>
+    </Discos>
+
+    <Discos>
+        <titulo>BSO Tarzán de niña a mujer</titulo>
+        <grupo> BTS</grupo>
+        <formato>CD</formato>
+        <id>D4</id>
+        <fecha_comprado>01/05/2026</fecha_comprado>
+    </Discos>
+
+    <Discos>
+        <titulo>MP, Me Piro</titulo>
+        <grupo> Soy <![CDATA[>]]> de edad</grupo>
+        <formato>USB</formato>
+        <id>D5</id>
+        <fecha_comprado>01/06/2026</fecha_comprado>
+    </Discos>
+            
+    <clientes> 
+        <nombre>María</nombre>
+        <nombre>Pilar</nombre>
+        <elementos_prestados>D1</elementos_prestados>
+        <elementos_prestados>D3</elementos_prestados>
+        <fecha_prestamo> 01/06/2026 </fecha_prestamo>
+        <fecha_prestamo> 02/06/2026 </fecha_prestamo>
+        <DNI> 111 </DNI>
+        <telefono> 2323 </telefono>
+        <telefono> 121 </telefono>
+    </clientes>
+
+    <clientes> 
+        <nombre>Jose</nombre>
+        <nombre>María</nombre>
+        <elementos_prestados>D2</elementos_prestados>
+        <fecha_prestamo> 05/06/2026 </fecha_prestamo>
+        <fecha_prestamo> 02/06/2026 </fecha_prestamo>
+        <DNI> 222 </DNI>
+        <telefono> 32322 </telefono>
+    </clientes>
+
+    <clientes> 
+        <nombre>Adriana</nombre>
+        <elementos_prestados>D4</elementos_prestados>
+        <elementos_prestados>D5</elementos_prestados>
+        <fecha_prestamo> 05/06/2026 </fecha_prestamo>
+        <DNI> 333 </DNI>
+        <telefono> 32324 </telefono>
+    </clientes>
+</musicator

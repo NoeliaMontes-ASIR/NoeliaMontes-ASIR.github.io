@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+-- enunciado uno
+
+<documento>
+<p>Mi Primer <destacar importancia="1">documento
+XML</destacar></p>
+<p>Comienza con la etiqueta &gtdocumento&gt;</p>
+<p>A continuacion colocamos un elemento sin
+contenido</p>
+<imagen fichero="imagen.gif">
+</documento>
+
+-- enunciado dos
+
+<?xml version="1.0"?>
+<libros>
+<libro id="quijote">
+<titulo>El Quijote</titulo>
+<autor nombre=cervantes nombre2=cervantes>
+<descripcion>Es el m<ejor libro de
+cervantes.</descripcion>
+</libro>
+</libros>

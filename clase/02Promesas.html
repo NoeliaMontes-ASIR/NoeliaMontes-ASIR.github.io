@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Promise sencilla</title>
+  <link rel="stylesheet" href="css/02.css">
+</head>
+<body>
+  <button id="btn">Probar promesa</button>
+  <div id="caja">Esperando...</div>
+
+  <script>
+    //variables
+    const btn = document.getElementById("btn");
+    const caja = document.getElementById("caja");
+
+    //funciones
+    function tareaAsync() {
+      return new Promise((resolve, reject) => {
+        caja.textContent = "Cargando...";
+        caja.style.background = "khaki";
+
+        setTimeout(() => {
+          const todoBien = true; // cambia a false para probar el error
+
+          if (todoBien) {
+            resolve("Hecho");
+          } else {
+            reject("Falló");
+          }
+        }, 2000);
+      });// los 2000 son lo segudnos que tarda en salir el hecho, osea son 2 segundos
+    }
+
+    //eventos . el then es que ha salido bien y el catch q algo va mal
+    // el then corresponde al resolve de arriba, en el if, entonces se llama mensaje porque si, y abajo le dice que a la caja en el caso de the sea then(correcto)
+    // va a aparecer mensaje, que corresponde a hecho
+    
+    btn.addEventListener("click", () => {
+      tareaAsync()
+        .then((mensaje) => {
+          caja.textContent = mensaje;
+          caja.style.background = "lightgreen";
+        })
+        .catch((error) => {
+          caja.textContent = error;
+          caja.style.background = "tomato";
+        });
+    });
+
+  </script>
+</body>
+</html>

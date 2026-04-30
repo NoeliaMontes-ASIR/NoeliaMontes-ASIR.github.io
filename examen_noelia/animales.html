@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Animales</h1>
+    <input type="button" id="boton" value="Dame un animal">
+    <div id="resultado"></div>
+
+
+    
+    <script>
+        let url="https://random-words-api.kushcreates.com/api?language=es&category=animals&number=1"
+        let boton=document.getElementById("boton")
+        let resultado=document.getElementById("resultado")
+
+        function getDameunAnimal(){
+            fetch(url)
+                .then(response => response.json())
+//                                                                                                                                    
+                .then(data => {
+                    console.log(data[0].url) 
+                    resultado.innerHTML = `${data[numeroAleatorio(0, 139)].word}`
+                })
+
+                .catch (error => console.log("error: " + error))
+        }
+
+        function numeroAleatorio(min, max) {
+            return Math.floor(Math.random()*(max - min + 1))+min;
+        }
+        
+        boton.addEventListener("click", (e) => { 
+            console.log("Boton pulsado")
+            getDameunAnimal()
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio simple</title>
+</head>
+<body>
+    <h1>Conversor de divisas</h1>
+    <h2>con https://frankfurter.dev/</h2>
+    Cantidad: <input type="number" id="cantidad" value="1">
+    <br> <input type="button" value="Convertir" id="convertir">
+    <div id="resultado"></div>
+    <script>
+        // define la moneda base para la conversión
+        let moneda="EUR"
+        // crea una variable con la URL de la API + la variable moneda
+        let url=`https://api.frankfurter.dev/v1/latest?base=${moneda}`
+
+        // creamos las variables que equivalen a los id de los input de HTML 
+        let cantidad=document.getElementById("cantidad")
+        let convertirBtn=document.getElementById("convertir")
+        let resultado=document.getElementById("resultado")
+
+        //funciones
+        /*
+            Devuelve un li con los datos de la moneda
+        */
+       // define la función que recibe 2 parámetros: valor y clave
+        function creaElemento(valor, clave) {
+            // calcula el total multiplicando la cantidad ingresada en el input con el tipo de cambio y redondea a 2 decimales            
+            let total= Math.round(parseFloat(cantidad.value)*parseFloat(valor)*100)/ 100
+            // crea un nuevo elemento de lista (<li>)
+            let liElement = document.createElement("li");
+            // asigna el texto al li
+            liElement.innerHTML = `${cantidad.value} ${moneda} => ${total} ${clave}` 
+            return liElement
+        }
+
+        
+        /*
+            Obtiene los cambios y los pinta en pantalla 
+        */
+        async function convertir(){        
+            // realiza la petición HTTP a la API definida en la variable url
+            fetch(url)
+            // convierte la respuesta recibida (formato texto) a formate JSON para poder leerla
+                .then(response => response.json())
+                // recibe los datos procesados en la variable datos
+                .then(datos => {  
+                    // imprime los datos en la consola para depuración     
+                    console.log(datos);
+                    // creamos la variable cambios la cual convierte el objeto 'datos.rates' (Contiene todas las monedas) en una lista de pares [clave,valor]
+                    let cambios=Object.entries(datos.rates)                    
+                    // recorre cada par de moneda-valor obtenido
+                    cambios.forEach(([clave, valor]) => {
+                        // imprime cada par en consola
+                        console.log(clave, valor);
+                        // llama a la función "creaElemento" para pintar cada moneda en el DOM
+                        let nuevoItem = creaElemento(valor,clave)
+                        resultado.appendChild(nuevoItem)    
+                    });
+                    
+                })
+                // en caso de error, lo captura y lo muestra en consola
+                .catch(error => console.log(error));                        
+        }
+        //eventos
+        // agrega un "escuchar" de eventos al botón, cuando se haga click, se ejecuta
+        convertirBtn.addEventListener("click", function(){
+            //limpia el contenido previo del div "resultado" para mostrar solo la nueva búsqueda
+            resultado.innerHTML=""
+            // llama a la función "convertir" para buscar los datos y pintarlos
+            convertir()
+        })
+
+    </script>
+</body>
+</html>
